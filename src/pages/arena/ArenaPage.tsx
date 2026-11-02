@@ -7,7 +7,7 @@ import { EvaluationModal } from '../../components/EvaluationModal';
 import { SceneCard } from '../../components/SceneCard';
 import { AudioToggle } from '../../components/AudioToggle';
 import { playSynthesizerNote } from '../../utils/audio';
-import bgGame from '../../../assets/bg-game.webp';
+import bgGame from '../../../assets/bg-splash-storyboard.webp';
 import logoJenama from '../../../assets/logo-jenama.webp?v2';
 
 interface ArenaPageProps {
