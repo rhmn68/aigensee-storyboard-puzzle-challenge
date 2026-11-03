@@ -6,6 +6,7 @@ import { ArenaPage } from './pages/arena/ArenaPage';
 import { ResultPage } from './pages/result/ResultPage';
 import { PortraitWarning } from './components/PortraitWarning';
 import { ObjectivesModal } from './components/ObjectivesModal';
+import { FullscreenModal } from './components/FullscreenModal';
 
 export default function App() {
   const {
@@ -101,6 +102,8 @@ export default function App() {
           getRank={getRank}
         />
       )}
+
+      <FullscreenModal />
 
       {/* Modal Tujuan Pembelajaran / Bermain */}
       <ObjectivesModal
