@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X, BookOpen, MoveVertical, CheckCircle2, ArrowRight, ArrowLeft } from 'lucide-react';
+import { X, Check, BookOpen, MoveVertical, CheckCircle2, ArrowRight, ArrowLeft } from 'lucide-react';
 
 interface GuideModalProps {
   isOpen: boolean;
@@ -92,11 +92,11 @@ export function GuideModal({ isOpen, onClose, title, description }: GuideModalPr
               </div>
               <div className="bg-emerald-50/60 border-2 border-slate-900 p-3 2xl:p-5 rounded-xl 2xl:rounded-2xl flex flex-col gap-2 2xl:gap-3 text-xs 2xl:text-base text-slate-700 font-medium shadow-[2px_2px_0px_#0f172a]">
                 <p className="flex items-start gap-2">
-                  <span className="font-bold text-emerald-700 shrink-0">✓</span>
+                  <Check aria-hidden="true" className="w-4 h-4 2xl:w-5 2xl:h-5 text-emerald-700 shrink-0" />
                   <span>Susun adegan kronologis dari <strong>Slot Pertama (Atas)</strong> hingga <strong>Slot Terakhir (Bawah)</strong>.</span>
                 </p>
                 <p className="flex items-start gap-2">
-                  <span className="font-bold text-emerald-700 shrink-0">✓</span>
+                  <Check aria-hidden="true" className="w-4 h-4 2xl:w-5 2xl:h-5 text-emerald-700 shrink-0" />
                   <span>Klik tombol <strong>Periksa Cerita</strong> jika urutan sudah sesuai untuk mendapat skor penuh.</span>
                 </p>
               </div>

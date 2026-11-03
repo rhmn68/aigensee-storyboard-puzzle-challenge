@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Target, HelpCircle } from 'lucide-react';
+import { Target, HelpCircle, Trophy, Check } from 'lucide-react';
 import { Story, Scene, StoryAnswer } from '../../types';
 import { STORYBOARD_CAMPAIGN } from '../../data/storyboardData';
 import { GuideModal } from '../../components/GuideModal';
@@ -7,8 +7,8 @@ import { EvaluationModal } from '../../components/EvaluationModal';
 import { SceneCard } from '../../components/SceneCard';
 import { AudioToggle } from '../../components/AudioToggle';
 import { playSynthesizerNote } from '../../utils/audio';
-import bgGame from '../../../assets/bg-splash-storyboard.webp';
-import logoJenama from '../../../assets/logo-jenama.webp?v2';
+import bgGame from '../../../assets/bg-storyboard-desk.jpeg';
+import logoJenama from '../../../assets/logo-jenama.webp';
 
 interface ArenaPageProps {
   currentStoryIndex: number;
@@ -200,7 +200,7 @@ export function ArenaPage({
               className="h-8 sm:h-9 md:h-10 lg:h-11 2xl:h-13 px-2 sm:px-2.5 md:px-3 bg-white/95 border-2 2xl:border-3 border-slate-900 rounded-xl 2xl:rounded-2xl shadow-[2px_2px_0px_#0f172a] flex items-center gap-1 shrink-0"
               title={`Total Poin: ${score}/${totalStories * 5}`}
             >
-              <span className="text-xs sm:text-sm md:text-base">🏆</span>
+              <Trophy aria-hidden="true" className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-amber-600 shrink-0" />
               <span id="arena-score-value" className="font-display text-xs sm:text-sm md:text-base 2xl:text-lg font-black text-[#346641]">
                 {score}
               </span>
@@ -291,7 +291,7 @@ export function ArenaPage({
                 {answers.some(a => a.storyId === activeStory.id && a.isCorrect) ? (
                   <>
                     <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-100 border border-emerald-700 text-emerald-800 text-xs sm:text-sm font-bold mr-auto sm:mr-0 font-display">
-                      <span>✓</span>
+                      <Check aria-hidden="true" className="w-3.5 h-3.5 shrink-0" />
                       <span>Selesai (+{answers.find(a => a.storyId === activeStory.id)?.points ?? 5})</span>
                     </div>
                     <button

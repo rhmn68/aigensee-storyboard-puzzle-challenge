@@ -1,9 +1,9 @@
 import React from 'react';
-import bgSplash from '../../../assets/bg-splash-storyboard.webp';
+import bgSplash from '../../../assets/bg-storyboard-desk.jpeg';
 import titlePuzzle from '../../../assets/title-puzzle.webp';
 import titleStoryboard from '../../../assets/title-storyboard.webp';
 import btnMulai from '../../../assets/btn-mulai.webp';
-import logoJenama from '../../../assets/logo-jenama.webp?v2';
+import logoJenama from '../../../assets/logo-jenama.webp';
 import { AudioToggle } from '../../components/AudioToggle';
 import { playSynthesizerNote } from '../../utils/audio';
 

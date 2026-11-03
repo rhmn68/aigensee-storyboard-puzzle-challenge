@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronUp, ChevronDown } from 'lucide-react';
+import { ChevronUp, ChevronDown, Check, X } from 'lucide-react';
 import { Scene } from '../types';
 import { getSlotLabel } from '../utils/text';
 
@@ -99,7 +99,12 @@ export function SceneCard({
                     : 'bg-rose-100 border-rose-700 text-rose-800'
                 }`}
               >
-                {isPosCorrect || isSolved ? '✓ OK' : '✗ Salah'}
+                {isPosCorrect || isSolved ? (
+                  <Check aria-hidden="true" className="w-3 h-3 shrink-0" />
+                ) : (
+                  <X aria-hidden="true" className="w-3 h-3 shrink-0" />
+                )}
+                {isPosCorrect || isSolved ? 'OK' : 'Salah'}
               </span>
             )}
           </div>

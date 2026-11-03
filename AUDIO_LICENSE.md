@@ -4,7 +4,7 @@ Proyek **Storyboard Puzzle Challenge** menggunakan musik latar belakang (backsou
 
 ---
 
-## 🎵 Informasi Lagu Latar Belakang (BGM)
+## Informasi Lagu Latar Belakang (BGM)
 
 - **File Path**: `assets/audio/bgm.mp3`
 - **Judul Asli**: Village Consort
@@ -16,7 +16,7 @@ Proyek **Storyboard Puzzle Challenge** menggunakan musik latar belakang (backsou
 
 ---
 
-## 🔊 Informasi Efek Suara (Sound Effects / SFX)
+## Informasi Efek Suara (Sound Effects / SFX)
 
 ### 1. File Audio Klik UI (Koleksi CC0 Baru)
 - **File Aktif**: `assets/audio/click.mp3` *(Tipe: Snappy Tactile Click)*
@@ -29,8 +29,8 @@ Proyek **Storyboard Puzzle Challenge** menggunakan musik latar belakang (backsou
 - **Lisensi**: [Creative Commons Zero (CC0 1.0 Universal) - Public Domain](https://creativecommons.org/publicdomain/zero/1.0/)
 
 ### 2. Synthesizer Internal (Web Audio API)
-- **🃏 Slide / Card Move (`slide`)**: Gesekan kartu halus saat memindahkan adegan.
-- **🎉 Success Chime (`success`)**: Akord pentatonik menaik saat susunan cerita benar.
-- **⚠️ Fail Wobble (`fail`)**: Ketukan ganda lembut saat susunan belum tepat.
-- **🏆 Grand Fanfare (`unlock`)**: Fanfare selebrasi kemenangan akhir.
-- **💡 Modal Pop (`pop`)**: Gelembung lembut saat membuka panduan/ulasan.
+- **Slide / Card Move (`slide`)**: Gesekan kartu halus saat memindahkan adegan.
+- **Success Chime (`success`)**: Akord pentatonik menaik saat susunan cerita benar.
+- **Fail Wobble (`fail`)**: Ketukan ganda lembut saat susunan belum tepat.
+- **Grand Fanfare (`unlock`)**: Fanfare selebrasi kemenangan akhir.
+- **Modal Pop (`pop`)**: Gelembung lembut saat membuka panduan/ulasan.

@@ -6,7 +6,7 @@ import { MAX_POINTS_PER_STORY, calculateStoryPoints } from '../../hooks/useGameS
 import { AudioToggle } from '../../components/AudioToggle';
 import { playSoundEffect } from '../../utils/audio';
 import { getSlotLabel } from '../../utils/text';
-import logoJenama from '../../../assets/logo-jenama.webp?v2';
+import logoJenama from '../../../assets/logo-jenama.webp';
 
 interface ResultPageProps {
   score: number;

@@ -1,8 +1,8 @@
 /**
  * Storyboard Puzzle Challenge - Kunci Jawaban Urutan Kronologis Adegan (Level 1 - 5)
  * 
- * 🌐 Live URL Demo: https://glenrioariesto.github.io/storyboard-puzzle-challenge/
- * 📂 Repository: https://github.com/glenrioariesto/storyboard-puzzle-challenge
+ * Live URL Demo: https://glenrioariesto.github.io/storyboard-puzzle-challenge/
+ * Repository: https://github.com/glenrioariesto/storyboard-puzzle-challenge
  */
 
 export interface StoryboardSceneAnswer {
