@@ -38,8 +38,8 @@ export function SceneCard({
   let cardClass = 'brutalist-card bg-white';
   if (checked || isSolved) {
     cardClass = isPosCorrect || isSolved
-      ? 'border-2 border-emerald-600 bg-emerald-50/50 shadow-[4px_4px_0px_#059669]' 
-      : 'border-2 border-rose-600 bg-rose-50/50 shadow-[4px_4px_0px_#e11d48]';
+      ? 'border-2 border-emerald-600 bg-white shadow-[4px_4px_0px_#059669]'
+      : 'border-2 border-rose-600 bg-white shadow-[4px_4px_0px_#e11d48]';
   }
 
   // Adjust card appearance when dragging
