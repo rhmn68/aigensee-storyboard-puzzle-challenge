@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useGameState } from './hooks/useGameState';
 import { useAudio } from './hooks/useAudio';
 import { SplashPage } from './pages/splash/SplashPage';
@@ -7,6 +7,7 @@ import { ResultPage } from './pages/result/ResultPage';
 import { PortraitWarning } from './components/PortraitWarning';
 import { ObjectivesModal } from './components/ObjectivesModal';
 import { FullscreenModal } from './components/FullscreenModal';
+import { TutorialModal } from './components/TutorialModal';
 
 export default function App() {
   const {
@@ -31,8 +32,10 @@ export default function App() {
     getRank
   } = useGameState();
 
-  const { isMuted, toggleMute, startBgm } = useAudio();
+  const { isMuted, toggleMute, startBgm, stopBgm } = useAudio();
   const [showObjectivesModal, setShowObjectivesModal] = useState(false);
+
+  const [showTutorialModal, setShowTutorialModal] = useState(false);
 
   // Try playing BGM on mount (will activate upon user gesture if blocked by autoplay policy)
   useEffect(() => {
@@ -46,10 +49,17 @@ export default function App() {
 
   const handleProceedFromObjectives = () => {
     setShowObjectivesModal(false);
+    stopBgm();
+    setShowTutorialModal(true);
+  };
+
+  const handleProceedFromTutorial = useCallback(() => {
+    setShowTutorialModal(false);
+    startBgm();
     if (pageView === 'splash') {
       startInvestigation();
     }
-  };
+  }, [pageView, startBgm, startInvestigation]);
 
   return (
     <div
@@ -111,6 +121,8 @@ export default function App() {
         onClose={() => setShowObjectivesModal(false)}
         onStart={handleProceedFromObjectives}
       />
+
+      <TutorialModal isOpen={showTutorialModal} onContinue={handleProceedFromTutorial} />
 
       {/* Footer Copyright: Hanya tampil di halaman tanpa kontrol (Splash & Result) */}
       {pageView !== 'game' && (
