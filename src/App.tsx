@@ -127,7 +127,7 @@ export default function App() {
       {/* Footer Copyright: Hanya tampil di halaman tanpa kontrol (Splash & Result) */}
       {pageView !== 'game' && (
         <footer className="fixed bottom-1.5 left-0 right-0 z-40 text-center pointer-events-none select-none text-[10px] sm:text-xs text-white font-display tracking-wider">
-          Copyright 2026 Pusat Perbukuan
+          © Copyright 2026 Pusat Perbukuan
         </footer>
       )}
     </div>
