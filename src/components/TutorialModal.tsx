@@ -58,7 +58,7 @@ export function TutorialModal({ isOpen, onContinue }: TutorialModalProps) {
           <div className="aspect-video overflow-hidden rounded-xl border-2 border-slate-900 bg-slate-950">
             <iframe
               title="Tutorial cara bermain Puzzle Storyboard"
-              src="https://www.youtube-nocookie.com/embed/QAruA-nbLPA?rel=0"
+              src="https://www.youtube-nocookie.com/embed/GdG9FhlkFkU?rel=0"
               className="w-full h-full"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
               referrerPolicy="strict-origin-when-cross-origin"
@@ -67,7 +67,7 @@ export function TutorialModal({ isOpen, onContinue }: TutorialModalProps) {
           </div>
         </div>
         <footer className="flex flex-wrap items-center justify-between gap-3 p-3 sm:p-5 border-t-2 border-slate-900 bg-slate-50">
-          <a href="https://youtu.be/QAruA-nbLPA" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-emerald-800 underline underline-offset-4">
+          <a href="https://youtu.be/GdG9FhlkFkU" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-emerald-800 underline underline-offset-4">
             Buka di YouTube <ExternalLink aria-hidden="true" className="w-3.5 h-3.5" />
           </a>
           <button type="button" onClick={onContinue} className="flex items-center gap-2 px-4 sm:px-6 py-2.5 bg-[#346641] hover:bg-[#2b5436] text-white font-display font-black text-xs sm:text-sm rounded-xl border-2 border-slate-900 shadow-[3px_3px_0px_#0f172a] cursor-pointer active:translate-y-px">
