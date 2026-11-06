@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Target, Puzzle, ListChecks, ChevronLeft, ChevronRight, X, Sparkles, GraduationCap } from 'lucide-react';
+import { Target, Puzzle, ListChecks, ChevronLeft, ChevronRight, X, GraduationCap } from 'lucide-react';
 import { playSynthesizerNote } from '../utils/audio';
 
 interface ObjectivesModalProps {
@@ -186,7 +186,6 @@ export function ObjectivesModal({ isOpen, onClose, onStart }: ObjectivesModalPro
                 className={`p-3 sm:p-4 rounded-xl sm:rounded-2xl border-2 transition-all duration-200 text-left ${slide.accentBorder}`}
               >
                 <div className="flex items-center gap-1.5 font-black text-[11px] sm:text-xs md:text-sm text-slate-900 font-display tracking-wide mb-1">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-500 shrink-0" />
                   <span>{item.keyword}</span>
                 </div>
                 <p className="text-[10px] sm:text-xs md:text-sm text-slate-700 font-medium leading-relaxed font-sans text-justify">

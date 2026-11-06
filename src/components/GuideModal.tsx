@@ -78,7 +78,7 @@ export function GuideModal({ isOpen, onClose, title, description }: GuideModalPr
                 </p>
                 <p className="flex items-start gap-2">
                   <span className="font-bold text-[#346641] shrink-0">2.</span>
-                  <span><strong>Tombol Geser Atas / Bawah:</strong> Gunakan tombol di bagian bawah setiap kartu untuk menukar posisi.</span>
+                  <span><strong>Tombol Geser Atas/Bawah:</strong> Gunakan tombol di bagian bawah setiap kartu untuk menukar posisi.</span>
                 </p>
               </div>
             </div>
