@@ -72,13 +72,13 @@ export const STORYBOARD_CAMPAIGN: Story[] = [
       {
         id: 0,
         title: "Perjanjian Damai di Muara",
-        imageUrl: suraBaya1,
+        imageUrl: suraBaya2,
         narrative: "Di muara tempat bertemunya air asin dan air tawar, dua penguasa tak tertandingi selalu hidup dalam perselisihan. Sura, sang penguasa samudera, dan Baya, sang penjaga sungai. Bosan dengan pertumpahan darah yang tiada akhir, mereka akhirnya menarik garis gencatan senjata: laut menjadi wilayah Sura, dan sungai menjadi teritori Baya."
       },
       {
         id: 1,
         title: "Sura Melanggar Sumpah",
-        imageUrl: suraBaya2,
+        imageUrl: suraBaya1,
         narrative: "Kedamaian itu goyah saat badai melanda lautan luas, membuat mangsa Sura pergi menjauh. Didorong oleh rasa lapar yang membakar naluri pertahanannya, Sura melanggar sumpah. Ia menyelinap diam-diam ke aliran sungai yang tenang, berburu di bawah bayang-bayang pepohonan, berharap kelancangannya tidak pernah terendus oleh Baya."
       },
       {
