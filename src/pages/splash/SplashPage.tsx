@@ -1,5 +1,7 @@
 import React from 'react';
 import bgSplash from '../../../assets/bg-storyboard-desk.jpeg';
+import titlePuzzle from '../../../assets/title-puzzle.webp';
+import titleStoryboard from '../../../assets/title-storyboard.webp';
 import btnMulai from '../../../assets/btn-mulai.webp';
 import logoJenama from '../../../assets/logo-jenama.webp';
 import { AudioToggle } from '../../components/AudioToggle';
@@ -64,10 +66,20 @@ export function SplashPage({ onStart, isMuted, onToggleAudio }: SplashPageProps)
         >
           {/* Floating container for titles to create a smooth bobbing/wiggle effect */}
           <div className="w-full flex flex-col items-center animate-float-wiggle">
-            <h1 className="w-full text-center font-display font-black leading-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl 2xl:text-9xl text-white drop-shadow-[3px_5px_0px_#0f172a]" style={{ WebkitTextStroke: '1px #0f172a' }}>
-              <span id="splash-title-puzzle" className="block text-amber-300 animate-title-1">Puzzle</span>
-              <span id="splash-title-storyboard" className="block animate-title-2">Storyboard</span>
-            </h1>
+            {/* Title 1: PUZZLE */}
+            <img
+              id="splash-title-puzzle"
+              src={titlePuzzle}
+              alt="PUZZLE"
+              className="w-[72%] sm:w-[70%] h-auto object-contain select-none pointer-events-none relative z-10 animate-title-1 drop-shadow-xl"
+            />
+            {/* Title 2: STORYBOARD */}
+            <img
+              id="splash-title-storyboard"
+              src={titleStoryboard}
+              alt="STORYBOARD"
+              className="w-full h-auto object-contain select-none pointer-events-none mt-0 relative z-20 animate-title-2 drop-shadow-xl"
+            />
           </div>
 
           {/* Centered Start Button with Pulse and Hover Grow Effect */}
